@@ -1,8 +1,13 @@
 import Layout from "@/components/Layout"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import { useEffect } from "react"
 
 const Index = () => {
+  useEffect(() => {
+    throw new Error("This is a test error");
+  }, []);
+
   return (
     <Layout>
       <h2 className="text-xl font-semibold mb-4">Welcome to Your Bare-Bones App</h2>
